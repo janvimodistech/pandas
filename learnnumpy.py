@@ -1,4 +1,5 @@
 import numpy as np 
+
 # list =[1,2,34,4]
 # hi = np.array(list)
 # print(hi )
