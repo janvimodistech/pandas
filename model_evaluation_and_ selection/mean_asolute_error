@@ -1,0 +1,10 @@
+from sklearn.datasets import fetch_california_housing
+from sklearn.model_selection import cross_val_score
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error
+housing = fetch_california_housing()
+regressor = DecisionTreeRegressor()
+scores = cross_val_score(regressor, housing.data, housing.target, scoring='neg_mean_absolute_error', cv=5)
+mae_scores = -scores
+mean_mae = mae_scores.mean()
+print(f"Mean Absolute Error: {mean_mae:.2f}")
