@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.arange(1, 6)
+y1 = np.array([5, 7, 8, 7, 2])
+y2 = np.array([3, 4, 6, 8, 9])
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+ax1.plot(x, y1, marker='o', linestyle='-')
+ax1.set_title('Line Plot')
+ax1.set_xlabel('X-axis')
+ax1.set_ylabel('Y-axis')
+ax2.bar(x, y2)
+ax2.set_title('Bar Plot')
+ax2.set_xlabel('X-axis')
+ax2.set_ylabel('Y-axis')
+plt.tight_layout()
+plt.show()

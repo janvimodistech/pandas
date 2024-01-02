@@ -1,0 +1,4 @@
+This is a sample sentence in English.
+Das ist ein Beispielsatz auf Deutsch.
+Ceci est une phrase d'exemple en français.
+Este es un ejemplo de frase en español.
